@@ -10,7 +10,7 @@ jobs:
     - name: Print "Cogratulations"
       run: echo "From, ${{ vars.MY_TASK}}"
   surname:
-    needs: myfirstjob
+    needs: myfirsttask
     runs-on: ubuntu-latest
     steps:
     - name: Surname
