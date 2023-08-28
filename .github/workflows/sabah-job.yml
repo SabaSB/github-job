@@ -3,8 +3,9 @@ on: workflow_dispatch
 jobs:
   myfirstjob:
     runs-on: ubuntu-latest
+    environment: saba
     steps:
-    - name: Print "Greetings"
-      run: echo "Hello students"
-    - name: Print "Cogratulations"
-      run: echo "From Riga"
+    -name: Echo message
+    run: echo "hello, ${{ vars.MY_NAME }}
+    name: Surname
+    run: echo "Surname - ${{ secrets.MY_SURNAME }}"
