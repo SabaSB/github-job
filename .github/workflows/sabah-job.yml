@@ -5,12 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     environment: SABAH
     steps:
-    - name: Echo "message"
-     run: echo "hello, ${{ vars.MY_NAME }}"
-     name: Surname
-     run: echo "${{ secrets.YOUR_SECRET }}"
+    - name: Echo message
+     run: echo "Hello, ${{ vars.MY_NAME }}"
+     surname:
+    needs: myfirstjob
+    runs-on: ubuntu-latest
+    steps:
     
-
 surname:
 runs-on: ubuntu-latest
 steps:
