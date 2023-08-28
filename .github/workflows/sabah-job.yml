@@ -9,3 +9,9 @@ jobs:
     run: echo "hello, ${{ vars.MY_NAME }}
     name: Surname
     run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
+
+surname:
+runs-on: ubuntu-latest
+steps:
+-name: Surname
+run: echo "Surname - ${{ secrets.MY_SURNAME }}"
