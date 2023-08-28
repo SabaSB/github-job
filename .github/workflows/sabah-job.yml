@@ -5,10 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: SABAH
     steps:
-    -name: Echo message
-    run: echo "hello, ${{ vars.MY_NAME }}
-    name: Surname
-    run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
+    - name: Echo "message"
+     run: echo "hello, ${{ vars.MY_NAME }}"
+     name: Surname
+     run: echo "${{ secrets.YOUR_SECRET }}"
+    
 
 surname:
 runs-on: ubuntu-latest
