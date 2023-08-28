@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Surname
-      run: echo "Surname - ${{ secrets.MY_SURNAME }}"
+      run: echo "Surname - ${{ secrets.SABAH_SECRET }}"
