@@ -8,4 +8,4 @@ jobs:
     -name: Echo message
     run: echo "hello, ${{ vars.MY_NAME }}
     name: Surname
-    run: echo "Surname - ${{ secrets.MY_SURNAME }}"
+    run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
