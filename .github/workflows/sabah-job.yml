@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
   myfirstjob:
     runs-on: ubuntu-latest
-    environment: saba
+    environment: SABAH
     steps:
     -name: Echo message
     run: echo "hello, ${{ vars.MY_NAME }}
